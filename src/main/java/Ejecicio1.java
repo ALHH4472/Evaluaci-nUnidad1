@@ -1,7 +1,9 @@
 
 public class Ejecicio1 {
+    
     public static void main(String[] args){
-       int [][] M1= new int[3][3];
+      
+      int [][] M1= new int[3][3];
       
       M1[0][0]=-5; 
       M1[0][1]=10;
@@ -50,13 +52,23 @@ public class Ejecicio1 {
           for(int z=0;z<3;z++){
             M2[i][z]=(M2[i][z])+(M1[i][z]);  
           }
-       }  
-            for(int j=0;j<3;j++){
+       }
+                
+          for(int f=0;f<3;f++){
+             for(int r=0;r<3;r++){
+                 for(int g=0;g<3;g++){
+                MResultado[r][f]+= M2[g][f]* M3[r][g];     
+                 }
+             }
+             
+         }     
+      
+      for(int j=0;j<3;j++){
           System.out.println();
           for(int x=0;x<3;x++){
-              System.out.print(M2[j][x]);
+              System.out.print(MResultado[j][x]);
               System.out.print(" ");
           }
       }
     }
-}
+  }
