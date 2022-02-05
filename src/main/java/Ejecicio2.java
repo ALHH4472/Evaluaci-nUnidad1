@@ -20,7 +20,7 @@ public class Ejecicio2 {
     }
        for(int r=0;r<M.length;r++){
          System.out.println();
-         for(int x=0;x<M.length;x++){
+         for(int x=0;x<M[r].length;x++){
        System.out.print(M[r][x]);
        System.out.print(" ");
     }  
