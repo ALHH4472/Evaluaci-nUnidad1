@@ -37,7 +37,7 @@ public class Ejercicio3 {
         }
       }
     }  
-         if(identidad==0 && identidad2==0){
+         if(identidad2==0 && identidad==0){
           System.out.println("Tu matriz es identidad:");
       }else{ 
         System.out.println("Esto no es una matriz identidad:");

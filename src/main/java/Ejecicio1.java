@@ -48,24 +48,20 @@ public class Ejecicio1 {
       int [][] MResultado= new int [3][3];
        
       for(int i=0;i<3;i++){
-          
-          for(int z=0;z<3;z++){
-            M2[i][z]=(M2[i][z])+(M1[i][z]);  
+      for(int z=0;z<3;z++){
+      M2[i][z]=(M2[i][z])+(M1[i][z]);  
           }
-       }
-                
+       }            
           for(int f=0;f<3;f++){
-             for(int r=0;r<3;r++){
-                 for(int g=0;g<3;g++){
-                MResultado[r][f]+= M2[g][f]* M3[r][g];     
+          for(int r=0;r<3;r++){
+          for(int g=0;g<3;g++){
+          MResultado[r][f]+= M2[g][f]* M3[r][g];     
                  }
-             }
-             
-         }     
-      
-      for(int j=0;j<3;j++){
-          System.out.println();
-          for(int x=0;x<3;x++){
+             }           
+         }          
+              for(int j=0;j<3;j++){
+              System.out.println();
+              for(int x=0;x<3;x++){
               System.out.print(MResultado[j][x]);
               System.out.print(" ");
           }
